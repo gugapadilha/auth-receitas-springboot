@@ -1,4 +1,4 @@
-package com.ocanha.retrofitcomkotlin.views
+package com.ocanha.retrofitcomkotlin.presentation.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,12 +7,12 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.ocanha.retrofitcomkotlin.databinding.ActivityNewRecipeBinding
-import com.ocanha.retrofitcomkotlin.model.Recipe
-import com.ocanha.retrofitcomkotlin.repositories.RecipeRepository
-import com.ocanha.retrofitcomkotlin.viewmodel.main.MainViewModel
-import com.ocanha.retrofitcomkotlin.viewmodel.main.MainViewModelFactory
-import com.ocanha.retrofitcomkotlin.viewmodel.newrecipe.NewRecipeViewModel
-import com.ocanha.retrofitcomkotlin.viewmodel.newrecipe.NewRecipeViewModelFactory
+import com.ocanha.retrofitcomkotlin.domain.model.Recipe
+import com.ocanha.retrofitcomkotlin.data.repositories.RecipeRepository
+import com.ocanha.retrofitcomkotlin.presentation.viewmodel.main.MainViewModel
+import com.ocanha.retrofitcomkotlin.presentation.viewmodel.main.MainViewModelFactory
+import com.ocanha.retrofitcomkotlin.presentation.viewmodel.newrecipe.NewRecipeViewModel
+import com.ocanha.retrofitcomkotlin.presentation.viewmodel.newrecipe.NewRecipeViewModelFactory
 
 class NewRecipeActivity : AppCompatActivity() {
 

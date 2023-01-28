@@ -1,10 +1,10 @@
-package com.ocanha.retrofitcomkotlin.viewmodel.main
+package com.ocanha.retrofitcomkotlin.presentation.viewmodel.main
 
 import android.os.Handler
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.ocanha.retrofitcomkotlin.model.Recipe
-import com.ocanha.retrofitcomkotlin.repositories.RecipeRepository
+import com.ocanha.retrofitcomkotlin.domain.model.Recipe
+import com.ocanha.retrofitcomkotlin.data.repositories.RecipeRepository
 
 
 class MainViewModel constructor(private val repository: RecipeRepository) : ViewModel() {

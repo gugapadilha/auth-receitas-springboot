@@ -1,4 +1,4 @@
-package com.ocanha.retrofitcomkotlin.views
+package com.ocanha.retrofitcomkotlin.presentation.views
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,12 +9,12 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.ocanha.retrofitcomkotlin.adapters.RecipesAdapter
+import com.ocanha.retrofitcomkotlin.presentation.adapters.RecipesAdapter
 import com.ocanha.retrofitcomkotlin.databinding.ActivityMainBinding
-import com.ocanha.retrofitcomkotlin.model.Recipe
-import com.ocanha.retrofitcomkotlin.repositories.RecipeRepository
-import com.ocanha.retrofitcomkotlin.viewmodel.main.MainViewModel
-import com.ocanha.retrofitcomkotlin.viewmodel.main.MainViewModelFactory
+import com.ocanha.retrofitcomkotlin.domain.model.Recipe
+import com.ocanha.retrofitcomkotlin.data.repositories.RecipeRepository
+import com.ocanha.retrofitcomkotlin.presentation.viewmodel.main.MainViewModel
+import com.ocanha.retrofitcomkotlin.presentation.viewmodel.main.MainViewModelFactory
 
 class MainActivity : AppCompatActivity() {
 

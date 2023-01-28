@@ -1,8 +1,8 @@
-package com.ocanha.retrofitcomkotlin.viewmodel.newrecipe
+package com.ocanha.retrofitcomkotlin.presentation.viewmodel.newrecipe
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.ocanha.retrofitcomkotlin.repositories.RecipeRepository
+import com.ocanha.retrofitcomkotlin.data.repositories.RecipeRepository
 
 class NewRecipeViewModelFactory constructor(private val repository: RecipeRepository): ViewModelProvider.Factory {
 

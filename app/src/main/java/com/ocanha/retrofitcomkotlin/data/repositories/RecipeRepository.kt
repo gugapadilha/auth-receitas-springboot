@@ -1,7 +1,7 @@
-package com.ocanha.retrofitcomkotlin.repositories
+package com.ocanha.retrofitcomkotlin.data.repositories
 
 import android.util.Log
-import com.ocanha.retrofitcomkotlin.model.Recipe
+import com.ocanha.retrofitcomkotlin.domain.model.Recipe
 
 class RecipeRepository {
 

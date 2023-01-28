@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RetrofitComKotlin">
         <activity
-            android:name=".views.NewRecipeActivity"
+            android:name=".presentation.views.NewRecipeActivity"
             android:exported="true" />
         <activity
-            android:name=".views.MainActivity"
+            android:name=".presentation.views.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".views.NewRecipeActivity">
+    tools:context=".presentation.views.NewRecipeActivity">
 
     <EditText
         android:id="@+id/edt_recipe_title"
@@ -95,7 +95,7 @@
         tools:layout_editor_absoluteX="165dp"
         tools:layout_editor_absoluteY="241dp" />
 
-    <com.ocanha.retrofitcomkotlin.views.components.LoadingView
+    <com.ocanha.retrofitcomkotlin.presentation.views.components.LoadingView
         android:id="@+id/loading_view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"

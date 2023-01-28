@@ -1,10 +1,10 @@
-package com.ocanha.retrofitcomkotlin.adapters
+package com.ocanha.retrofitcomkotlin.presentation.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.ocanha.retrofitcomkotlin.databinding.ResItemRecipesBinding
-import com.ocanha.retrofitcomkotlin.model.Recipe
+import com.ocanha.retrofitcomkotlin.domain.model.Recipe
 
 class RecipesAdapter(private val onItemClicked: (Recipe) -> Unit) :
     RecyclerView.Adapter<MainViewHolder>() {

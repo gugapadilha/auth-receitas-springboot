@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.MainActivity">
+    tools:context=".presentation.views.MainActivity">
 
     <ImageView
         android:id="@+id/img_no_recipes"
@@ -64,7 +64,7 @@
         tools:layout_editor_absoluteX="165dp"
         tools:layout_editor_absoluteY="241dp" />
 
-    <com.ocanha.retrofitcomkotlin.views.components.LoadingView
+    <com.ocanha.retrofitcomkotlin.presentation.views.components.LoadingView
         android:id="@+id/loading_view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"

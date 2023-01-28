@@ -1,4 +1,4 @@
-package com.ocanha.retrofitcomkotlin.views.components
+package com.ocanha.retrofitcomkotlin.presentation.views.components
 
 import android.content.Context
 import android.util.AttributeSet
