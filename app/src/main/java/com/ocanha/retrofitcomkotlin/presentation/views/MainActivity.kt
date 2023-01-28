@@ -16,6 +16,8 @@ import com.ocanha.retrofitcomkotlin.data.repositories.RecipeRepository
 import com.ocanha.retrofitcomkotlin.presentation.viewmodel.main.MainViewModel
 import com.ocanha.retrofitcomkotlin.presentation.viewmodel.main.MainViewModelFactory
 
+//iniciar springboot pelo android studio
+// project -> api_local -> restapi -> abrir com terminal -> java -jar res...
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
