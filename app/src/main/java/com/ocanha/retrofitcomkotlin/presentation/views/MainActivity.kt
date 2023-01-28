@@ -13,6 +13,7 @@ import com.ocanha.retrofitcomkotlin.presentation.adapters.RecipesAdapter
 import com.ocanha.retrofitcomkotlin.databinding.ActivityMainBinding
 import com.ocanha.retrofitcomkotlin.domain.model.Recipe
 import com.ocanha.retrofitcomkotlin.data.repositories.RecipeRepository
+import com.ocanha.retrofitcomkotlin.data.rest.RetrofitService
 import com.ocanha.retrofitcomkotlin.presentation.viewmodel.main.MainViewModel
 import com.ocanha.retrofitcomkotlin.presentation.viewmodel.main.MainViewModelFactory
 
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var viewModel: MainViewModel
+    private val retrofitService = RetrofitService.getInstance()
 
     private val adapter = RecipesAdapter { recipe ->
         openRecipe(recipe)
@@ -32,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        viewModel = ViewModelProvider(this, MainViewModelFactory(RecipeRepository())).get(
+        viewModel = ViewModelProvider(this, MainViewModelFactory(RecipeRepository(retrofitService))).get(
             MainViewModel::class.java
         )
 

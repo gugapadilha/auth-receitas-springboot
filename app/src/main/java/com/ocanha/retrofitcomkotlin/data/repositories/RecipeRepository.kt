@@ -1,9 +1,10 @@
 package com.ocanha.retrofitcomkotlin.data.repositories
 
 import android.util.Log
+import com.ocanha.retrofitcomkotlin.data.rest.RetrofitService
 import com.ocanha.retrofitcomkotlin.domain.model.Recipe
 
-class RecipeRepository {
+class RecipeRepository constructor(private val retrofitService: RetrofitService) {
 
     fun saveRecipe(recipe: Recipe) {
 
@@ -12,12 +13,6 @@ class RecipeRepository {
 
     }
 
-    fun getAllRecipes(): List<Recipe> {
-
-        val recipes = mutableListOf<Recipe>()
-
-        return recipes
-
-    }
+    fun getAllRecipes() = retrofitService.getAllRecipes()
 
 }
