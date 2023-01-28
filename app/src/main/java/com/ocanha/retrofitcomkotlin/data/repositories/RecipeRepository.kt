@@ -16,18 +16,6 @@ class RecipeRepository {
 
         val recipes = mutableListOf<Recipe>()
 
-        for (i in 1..10) {
-            recipes.add(
-                Recipe(
-                    "Guga Padilha",
-                    i.toString(),
-                    "2 xícaras de trigo. 3 colheres de açucar. 2 colheres de manteiga.",
-                    "Bolo de Cenoura",
-                    "Doce"
-                )
-            )
-        }
-
         return recipes
 
     }
