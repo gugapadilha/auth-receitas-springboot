@@ -18,7 +18,23 @@ class MainViewModel constructor(private val repository: RecipeRepository) : View
     fun getAllRecipes() {
 
         val request = this.repository.getAllRecipes()
+        request.enqueue(object : Callback<List<Recipe>>{
+            override fun onResponse(call: Call<List<Recipe>>, response: Response<List<Recipe>>) {
 
+                if (response.code() == 200){
+
+                   recipesList.postValue(response.body())
+
+                }else {
+                    errorMessage.postValue("Erro ao listar receitas ${response.code()}")
+                }
+            }
+
+            override fun onFailure(call: Call<List<Recipe>>, t: Throwable) {
+                errorMessage.postValue(t.message)
+            }
+
+        })
 
 
     }
