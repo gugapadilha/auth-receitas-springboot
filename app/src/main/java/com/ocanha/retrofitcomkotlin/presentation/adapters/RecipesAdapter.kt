@@ -1,5 +1,6 @@
 package com.ocanha.retrofitcomkotlin.presentation.adapters
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -11,6 +12,7 @@ class RecipesAdapter(private val onItemClicked: (Recipe) -> Unit) :
 
     private var recipes = mutableListOf<Recipe>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setRecipesList(lives: List<Recipe>) {
 
         this.recipes = lives.toMutableList()
@@ -35,6 +37,7 @@ class RecipesAdapter(private val onItemClicked: (Recipe) -> Unit) :
 
 class MainViewHolder(val binding: ResItemRecipesBinding) : RecyclerView.ViewHolder(binding.root) {
 
+    @SuppressLint("SetTextI18n")
     fun bind(recipe: Recipe, onItemClicked: (Recipe) -> Unit) {
 
         binding.tvRecipeTitle.text = recipe.name

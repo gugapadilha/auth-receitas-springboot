@@ -8,7 +8,7 @@ class RecipeRepository {
     fun saveRecipe(recipe: Recipe) {
 
         //Salvar receita
-        Log.i("Kaique", recipe.toString())
+        Log.i("Guga", recipe.toString())
 
     }
 
@@ -19,7 +19,7 @@ class RecipeRepository {
         for (i in 1..10) {
             recipes.add(
                 Recipe(
-                    "Kaique Ocanha",
+                    "Guga Padilha",
                     i.toString(),
                     "2 xícaras de trigo. 3 colheres de açucar. 2 colheres de manteiga.",
                     "Bolo de Cenoura",
