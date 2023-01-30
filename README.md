@@ -10,8 +10,8 @@
   + Listas;
   + Validações;
   + Detalhes;
-  + Dados
-  + Cadastros
+  + Dados;
+  + Cadastros.
   
   <strong>Tecnologias usadas: </strong>
    + Kotlin
