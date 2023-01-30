@@ -6,6 +6,7 @@ import retrofit2.Call
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
 
@@ -15,7 +16,7 @@ interface RetrofitService {
     fun getAllRecipes() : Call<List<Recipe>>
 
     @POST("recipes")
-    fun saveRecipe(recipe: Recipe) : Call<ResponseBody>
+    fun saveRecipe(@Body recipe: Recipe) : Call<ResponseBody>
 
     companion object {
 
