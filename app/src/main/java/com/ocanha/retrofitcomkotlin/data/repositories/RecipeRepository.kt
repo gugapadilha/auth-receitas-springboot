@@ -8,9 +8,6 @@ class RecipeRepository constructor(private val retrofitService: RetrofitService)
 
     fun saveRecipe(recipe: Recipe) {
 
-        //Salvar receita
-        Log.i("Guga", recipe.toString())
-
     }
 
     fun getAllRecipes() = retrofitService.getAllRecipes()
