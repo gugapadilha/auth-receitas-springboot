@@ -10,12 +10,12 @@
   + Listas;
   + Validações;
   + Detalhes;
-  + Exibições;
   + Dados
+  + Cadastros
   
   <strong>Tecnologias usadas: </strong>
    + Kotlin
    + Android 
-   + Jetpack Compose
+   + Springboot
   
    ### Imagens do projeto:
