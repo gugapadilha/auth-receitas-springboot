@@ -21,10 +21,15 @@ class NewRecipeViewModel constructor(private val repository: RecipeRepository) :
         request.enqueue(object : Callback<ResponseBody>{
             override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
 
+                if (response.code() == 200){
+                    status.postValue(true)
+                }else {
+                    status.postValue(false)
+                }
             }
 
             override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
-
+                status.postValue(false)
             }
 
         })
