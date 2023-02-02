@@ -14,9 +14,9 @@
   + Cadastros.
   
   <strong>Tecnologias usadas: </strong>
-   + Kotlin
-   + Android 
-   + Springboot
+   + Kotlin;
+   + Android;
+   + Springboot.
   
    ### Imagens Mobile do projeto:
   ![380x740(2)](https://user-images.githubusercontent.com/79876042/215833933-5de3be36-3937-4730-98f5-c2f0e6fa91bb.png)
